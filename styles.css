@@ -1,0 +1,10 @@
+#openinghours {
+    background-color: yellow;
+    width: 25%;
+}
+
+#openinghours-text {
+    background-color: red;
+    width: 25%;
+    height: 250px;
+}
