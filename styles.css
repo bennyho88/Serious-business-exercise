@@ -1,15 +1,39 @@
+
+
 #openinghours {
-    background-color: yellow;
+    margin: 0 auto;
+    background-color:whitesmoke;
     width: 25%;
+    padding: 25px;
+    margin-bottom: 50px;
+    
+   
 }
 
 #openinghours-text {
-    background-color: red;
+    
+    padding: 25px;
+    background-color: whitesmoke;
     width: 25%;
-    height: 250px;
+    margin: 0 auto;
+    
+    
 }
 
 body {
     background-image: url(barber.jpg);
     background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+#openinghours {
+    box-shadow: 0 0 15px rgba(0,0,0,.25);
+}
+
+#openinghours-text {
+    box-shadow: 0 0 15px rgba(0,0,0,.25);
 }
