@@ -62,3 +62,9 @@ setInterval (startTimer, 1000);
 function startTimer() {
     document.getElementById("txt").innerHTML = new Date().toLocaleTimeString();
 }
+
+document.getElementById("btn").addEventListener("click", early);
+
+function early() {
+    if (day)
+}
