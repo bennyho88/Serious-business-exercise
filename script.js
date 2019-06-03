@@ -1,27 +1,34 @@
-
-/*
-document.getElementById("btn").addEventListener("click", time);
-
-function time() { 
-
 var today = new Date();
-document.getElementById('datetime').innerHTML = today;
-*/
+var day = today.getDay();
+console.log(day);
+var hour = today.getHours();
+console.log(hour);
+var minutes = today.getMinutes() / 100;
+console.log(minutes);
+var time = hour + minutes;
+console.log(time);
 
+var weekdays = new Array(7);
+weekdays[0] = "Sunday";
+weekdays[1] = "Monday";
+weekdays[2] = "Tuesday";
+weekdays[3] = "Wednesday";
+weekdays[4] = "Thursday";
+weekdays[5] = "Friday";
+weekdays[6] = "Saturday";
 
-/*
-document.getElementById("btn").addEventListener("click", time);
+let n = weekdays[day];
+console.log(n);
 
-function time() {
+window.addEventListener ("load", door) 
 
-   
-    
-    document.getElementById("datetime").innerHTML = n;
-    document.getElementById("datetime").innerHTML = h;
-    
+function door() {
+
+if ( (day = 0) || (day = 1) || (time < 9) || (time > 13)) {
+    document.querySelector("#store").innerHTML = "closed";
+} else {
+    document.querySelector("#store").innerHTML = "open";
+    }
 }
- */
 
-var d = new Date();
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-document.getElementById("weekday").innerHTML = days[d.getDay()];
+document.querySelector("#now").innerHTML = "It's " +  n + " " + time +" hour" + " now";

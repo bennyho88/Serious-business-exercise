@@ -7,22 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="">
     <button id="btn">Check the time and date</button>
     <p>Date/ Time: <span id="datetime"></span></p>
     <div id="openinghours">
         <h2>Opening hours</h2>
-        <p>Monday: Closed</p>
-        <p>Tuesday: 09h00 - 18h00</p>
-        <p>Wednesday: 09h00 - 18h00</p>
-        <p>Thursday: 09h00 - 18h00</p>
-        <p>Friday: 09h00 - 20h00</p>
-        <p>Saturday: 09h00 - 17h00</p>
-        <p>Sunday: Closed</p>
+        <p class="business-hours">Monday: Closed</p>
+        <p class="business-hours">Tuesday: 09h00 - 18h00</p>
+        <p class="business-hours">Wednesday: 09h00 - 18h00</p>
+        <p class="business-hours">Thursday: 09h00 - 18h00</p>
+        <p class="business-hours">Friday: 09h00 - 20h00</p>
+        <p class="business-hours">Saturday: 09h00 - 17h00</p>
+        <p class="business-hours"> Sunday: Closed</p>
     </div>
-    <p id="weekday"></p>
     <div id="openinghours-text">
-        The business is currently open / closed
+        The business is currently <span id="store"></span>
+        <p id="now"></p>
     </div>
 
     <script src="script.js"></script>
