@@ -5,6 +5,7 @@ var hour = today.getHours();
 console.log(hour);
 var minutes = today.getMinutes() / 100;
 console.log(minutes);
+var seconds = today.getSeconds();
 var time = hour + minutes;
 console.log(time);
 
@@ -24,6 +25,7 @@ window.addEventListener ("load", door)
 
 function door() {
 
+var minutes = today.getMinutes();
 if ( (day = 0) || (day = 1) || (time < 9) || (time > 13)) {
     document.querySelector("#store").innerHTML = "closed";
 } else {
@@ -32,3 +34,31 @@ if ( (day = 0) || (day = 1) || (time < 9) || (time > 13)) {
 }
 
 document.querySelector("#now").innerHTML = "It's " +  n + " " + time +" hour" + " now";
+
+// function startTime() {
+   
+//    var m = today.getMinutes();
+   
+// /*
+//   var today = new Date();
+//   var h = today.getHours();
+//   var m = today.getMinutes();
+//   var s = today.getSeconds();
+// */
+//     m = checkTime(m);
+//     seconds= checkTime(seconds);
+//     document.getElementById("txt").innerHTML =
+//     hour + ":" + m + ":" + seconds;
+//     var t = setTimeout (startTime, 500);
+// }
+
+// function checkTime(i) {
+//     if (i < 10) {i = "0" + i};
+//     return i;
+// };
+
+setInterval (startTimer, 1000);
+
+function startTimer() {
+    document.getElementById("txt").innerHTML = new Date().toLocaleTimeString();
+}
